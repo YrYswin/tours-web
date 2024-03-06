@@ -1,0 +1,8 @@
+.mapsContact {
+   background-image: url('../../../assets/image/mapImage.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   border-top: 1px solid red;
+   border-bottom: 1px solid red;
+}

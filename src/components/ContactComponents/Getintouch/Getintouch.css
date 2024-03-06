@@ -1,0 +1,80 @@
+.getintouch {
+   background-image: url('../../../assets/svg/backgroundSpecial.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 50px 250px;
+   display: flex;
+   justify-content: space-between;
+   margin: 50px 0 0;
+}
+
+.contactContainer {
+   width: 330px;
+}
+
+.contactTitle h1 {
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.contactTitle p {
+   font-size: 16px;
+   margin: 10px 0;
+}
+
+.ourData {
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+}
+
+.ourData>div {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin: 10px 0;
+   padding: 10px;
+   border: 1px solid transparent;
+   height: 50px;
+   cursor: pointer;
+}
+
+.ourData>div:hover,
+.ourAddress {
+   border: 1px solid var(--first-color) !important;
+   border-radius: 12px;
+   background-color: rgb(255, 135, 15, .2);
+}
+
+.userContact {
+   width: 480px;
+   background-color: rgb(255, 255, 255, .4);
+   padding: 30px;
+   border-radius: 22px;
+}
+
+.userContact .inputContainerUser {
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.inputContainerUser input {
+   padding: 10px 15px;
+   border-radius: 7px;
+}
+
+.btnFormUser {
+   display: flex;
+   justify-content: center;
+}
+
+.userContact form button {
+   padding: 10px 25px;
+   font-size: 16px;
+   background-color: var(--first-color);
+   border-radius: 20px;
+   color: #fff;
+   cursor: pointer;
+}

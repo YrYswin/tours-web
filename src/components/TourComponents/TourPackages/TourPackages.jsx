@@ -10,7 +10,7 @@ function TourPackages() {
          <div className="tourTitle">
             <h1>Tour Packages</h1>
          </div>
-         <div className="packagesContainer">
+         <div className="tourPackagesContainer">
 
             <TourPackage />
             <TourPackage />

@@ -15,9 +15,10 @@
    color: var(--first-color);
 }
 
-.packagesContainer {
+.tourPackagesContainer {
    display: flex;
    flex-wrap: wrap;
+   gap: 30px;
    justify-content: center;
 }
 

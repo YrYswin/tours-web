@@ -28,7 +28,7 @@ function PopularPackages() {
          <div className="packagesTitle">
             <h1>The Most Popular Packages</h1>
          </div>
-         <div className="packagesContainer">
+         <div className="packagesContainers">
             <Package
                img={bikeRickshaw} img_1={one_a} img_2={one_e} img_3={one_o} img_4={zero}
                name='BIKE / RICKSHAW' price={10} title_1='Your bike for a day' title_2='City App'
