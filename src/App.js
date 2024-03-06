@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage'
 import TourPage from './pages/TourPage'
 import ContactPage from './pages/ContactPage'
 import Layout from './components/Layout/Layout'
+import SearchResults from './components/SearcherTour/SearchResults/SearchResults';
 
 function App() {
    return (
@@ -16,6 +17,8 @@ function App() {
                <Route path='/about' element={<AboutPage />} />
                <Route path='/tour' element={<TourPage />} />
                <Route path='/contact' element={<ContactPage />} />
+
+               <Route path='/find-tour' element={<SearchResults />} />
             </Route>
          </Routes>
       </div>

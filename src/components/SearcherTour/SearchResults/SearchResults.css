@@ -1,0 +1,95 @@
+.searchResults {
+   width: 1200px;
+   margin: 50px auto;
+}
+
+.searchResultTitle h1 {
+   font-size: 35px;
+   font-weight: 600;
+}
+
+.findResults {
+   margin: 40px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.findTour {
+   display: flex;
+}
+
+.findtourImage {
+   width: 300px;
+}
+
+.findtourImage img {
+   width: 100%;
+   border-radius: 15px;
+}
+
+.findtourTitle {
+   padding: 5px 15px 5px 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.findtourTitle h1 {
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.findtourInfo {
+   display: flex;
+   gap: 100px;
+}
+
+.findtourInfo li {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin: 15px 0;
+}
+
+.findtourInfo li img {
+   width: 25px;
+}
+
+.findtourInfo h5 {
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+.findtourInfo h5 span {
+   font-size: 24px;
+   color: var(--first-color);
+}
+
+.buttonGroup {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.buttonGroup button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   font-size: 14px;
+   height: 35px;
+   cursor: pointer;
+}
+
+.viewBtn {
+   background: transparent;
+   border: 1px solid var(--first-color);
+   color: var(--first-color);
+}
+
+.bookBtn {
+   background-color: var(--first-color);
+   color: #ffffff;
+}

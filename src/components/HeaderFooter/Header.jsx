@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 import CreateAccount from '../Authorizations/CreateAccount'
 import Login from '../Authorizations/Login/Login'
@@ -12,26 +12,30 @@ import logo from '../../assets/svg/logo.svg'
 import './Header.css'
 
 function Header() {
-   const [activePage, setActivePage] = useState('home')
    const [modal, setModal] = useState('')
 
-   function changeActive(message) {
-      setActivePage(message)
-   }
+   const location = useLocation();
+   const [activePage, setActivePage] = useState('');
+
+   useEffect(() => {
+      const path = location.pathname.split('/')[1];
+      setActivePage(path);
+   }, [location]);
 
    function changePopup(message) {
       setModal(message)
    }
+
    return (
-      <div className={activePage === 'tour' || 'contact' ? 'header colorContrast' : 'header'}>
+      <div className='header'>
          <div className="logoBox">
             <img src={logo} alt="logo" />
          </div>
-         <div className="pagesBox">
-            <Link className={activePage === 'home' ? 'activeClass' : ''} onClick={() => changeActive('home')} to='/'>Home</Link>
-            <Link className={activePage === 'about' ? 'activeClass' : ''} onClick={() => changeActive('about')} to='/about'>About Us</Link>
-            <Link className={activePage === 'tour' ? 'activeClass' : ''} onClick={() => changeActive('tour')} to='/tour'>Tour Package</Link>
-            <Link className={activePage === 'contact' ? 'activeClass' : ''} onClick={() => changeActive('contact')} to='/contact'>Contact Us</Link>
+         <div className={activePage === '' || activePage === 'about' ? 'pagesBox white' : 'pagesBox'}>
+            <Link className={activePage === '' ? 'activeClass' : ''} to='/'>Home</Link>
+            <Link className={activePage === 'about' ? 'activeClass' : ''} to='/about'>About Us</Link>
+            <Link className={activePage === 'tour' ? 'activeClass' : ''} to='/tour'>Tour Package</Link>
+            <Link className={activePage === 'contact' ? 'activeClass' : ''} to='/contact'>Contact Us</Link>
          </div>
          <div className="authorizationBox">
             <select name="language" id="language">
@@ -48,10 +52,8 @@ function Header() {
          {modal === 'recovery' && <PasswordRecovery changePopup={changePopup} />}
 
          <div className="background">
-            {activePage === 'home' && <img src={backgroundHome} alt="" />}
+            {activePage === '' && <img src={backgroundHome} alt="" />}
             {activePage === 'about' && <img src={aboutBackground} alt="" />}
-            {activePage === 'tour' && ''}
-            {activePage === 'contact' && ''}
          </div>
       </div>
    )

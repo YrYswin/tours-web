@@ -6,7 +6,7 @@ import emailIcon from '../../../../assets/svg/emailIcon.svg'
 
 import './PasswordRecovery.css'
 
-function PasswordRecovery() {
+function PasswordRecovery({ changePopup }) {
    const [step, setStep] = useState(1)
    const [email, setEmail] = useState('')
    const [message, setMessage] = useState('')
@@ -112,7 +112,7 @@ function PasswordRecovery() {
                   <p>Click below to login in magicially.</p>
                </div>
                <div className="buttonRecovery">
-                  <button className='continiue'>Continiue</button>
+                  <button className='continiue' onClick={() => changePopup('')}>Continiue</button>
                   <button className='back'>Back to login</button>
                </div>
             </div>

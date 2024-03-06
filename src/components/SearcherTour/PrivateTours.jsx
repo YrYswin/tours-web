@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import dateIcon from '../../assets/svg/dateIcon.svg'
 import search from '../../assets/svg/search.svg'
@@ -64,7 +65,9 @@ function PrivateTours() {
             </select>
          </label>
          <div className="searchSubmit">
-            <img src={search} alt="search" />
+            <Link to='/find-tour'>
+               <img src={search} alt="search" />
+            </Link>
          </div>
       </div>
    )
