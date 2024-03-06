@@ -1,0 +1,92 @@
+.searcherTour {
+   width: 1250px;
+   margin: 0 auto;
+   margin-bottom: 400px;
+}
+
+.searchTitle {
+   margin-top: 40px;
+   text-align: center;
+}
+
+.searchTitle h1 {
+   font-size: 62px;
+   color: #eee;
+   font-weight: 400;
+}
+
+.searchTitle p {
+   font-size: 18px;
+   color: #dddddd;
+}
+
+.searchContainer {
+   width: 800px;
+   margin: 10px auto;
+   background-color: rgb(255, 255, 255, .2);
+   padding: 15px;
+   border-radius: 10px;
+}
+
+.searchBy {
+   display: flex;
+   background-color: rgb(255, 255, 255, .2);
+   width: max-content;
+   border-radius: 5px 5px 0 0;
+}
+
+.searchBy>div {
+   padding: 10px;
+   cursor: pointer;
+}
+
+.searchBy .activePublic {
+   background-color: rgb(255, 255, 255, .8);
+   border-radius: 5px 0 0 0;
+}
+
+.searchBy .activePrivate {
+   background-color: rgb(255, 255, 255, .8);
+   border-radius: 0 5px 0 0;
+}
+
+.searchParameters {
+   width: 100%;
+   background-color: rgb(255, 255, 255, .8);
+   padding: 10px;
+   border-radius: 0 5px 5px 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.searchParameters label {
+   display: flex;
+   flex-direction: column;
+}
+
+.searchParameters label p {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   gap: 8px;
+   padding: 10px 16px 27px 16px;
+}
+
+.searchParameters label p img {
+   width: 19px;
+}
+
+.searchParameters label select {
+   background: transparent;
+   outline: none;
+}
+
+.searchSubmit {
+   border-radius: 15px;
+   background-color: var(--first-color);
+   width: 75px;
+   height: 75px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

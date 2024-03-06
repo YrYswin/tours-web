@@ -1,0 +1,33 @@
+.aboutTransport {
+   width: 1150px;
+   margin: 60px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 30px;
+}
+
+.aboutTransport>div {
+   width: 100%;
+}
+
+.imageTransport img {
+   width: 100%;
+}
+
+.titleTransport {
+   margin: 20px 5px;
+}
+
+.titleTransport h1 {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   font-size: 22px;
+   margin-bottom: 15px;
+}
+
+.titleTransport p {
+   font-size: 14px;
+   color: rgb(86, 86, 86);
+}

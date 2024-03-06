@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yellowtail&display=swap');
+
+
+.popularPlace {
+   width: 1250px;
+   margin: 50px auto;
+}
+
+.titlePlace {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 20px 0;
+}
+
+.arrow {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+}
+
+.arrow svg:hover circle {
+   fill: orange;
+}
+
+.titlePlace h1 {
+   font-size: 40px;
+   font-family: Yellowtail;
+}
+
+.containerPlace {
+   display: flex;
+   justify-content: space-between;
+}
+
+.popularItem {
+   width: 300px;
+}
+
+.pictureContainer img {
+   width: 100%;
+   border-radius: 20px;
+}
+
+.infoItem {
+   padding: 15px 5px;
+}
+
+.infoItem h3 {
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+
+.infoItem span {
+   color: var(--first-color);
+}
+
+.infoItem .timePeople {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 0;
+}
+
+.infoItem .timePeople>div {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   color: var(--first-color);
+}

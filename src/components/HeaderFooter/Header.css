@@ -1,0 +1,125 @@
+.header {
+   padding: 10px 143px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(250, 250, 250, .1);
+   border-bottom: 1px solid rgb(176, 176, 176);
+   position: relative;
+}
+
+.background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -100;
+   height: 100vh;
+   width: 100%;
+}
+
+.colorContrast {
+   border-bottom: 1px solid #d9d8d8;
+   background-color: rgb(12, 12, 12, .05);
+}
+
+.colorContrast a {
+   color: #333 !important;
+}
+
+.colorContrast a:hover {
+   color: var(--first-color) !important;
+}
+
+.colorContrast .authorizationBox select,
+.loginBtn {
+   color: #333 !important;
+}
+
+.background img {
+   height: 100vh;
+   width: 100%;
+}
+
+.logoBox {
+   width: 120px;
+}
+
+.logoBox img {
+   width: 100%;
+}
+
+.pagesBox {
+   display: flex;
+   gap: 30px;
+}
+
+.pagesBox a {
+   color: #eee;
+   border-bottom: 3px solid rgb(12, 12, 12, .0);
+   padding-bottom: 5px;
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.pagesBox a:hover,
+.activeClass {
+   color: #ffffff;
+   border-bottom: 3px solid var(--first-color) !important;
+}
+
+
+
+.authorizationBox {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.authorizationBox select {
+   width: 60px;
+   font-size: 16px;
+   background-color: rgb(1, 2, 2, 0);
+   color: #eee;
+   outline: none;
+   cursor: pointer;
+}
+
+.authorizationBox select:hover {
+   color: #ffffff;
+}
+
+option {
+   background-color: rgb(1, 2, 2, 0);
+   color: #333;
+   padding: 10px;
+}
+
+option:hover {
+   background-color: #f0f0f0;
+}
+
+.authorizationBox button {
+   padding: 5px 10px;
+   font-size: 20px;
+   color: #eee;
+}
+
+.authorizationBox button:hover {
+   color: #ffffff;
+   cursor: pointer;
+}
+
+.loginBtn {
+   background: transparent;
+}
+
+.signupBtn {
+   background-color: var(--first-color);
+   border-radius: 16px;
+}
+
+.signupBtn:hover {
+   background-color: orange;
+   color: white;
+}

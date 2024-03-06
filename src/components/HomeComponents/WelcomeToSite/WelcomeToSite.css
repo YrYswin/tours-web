@@ -1,0 +1,60 @@
+.welcomeContainer {
+   width: 1150px;
+   margin: 50px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 200px;
+}
+
+.welcomeContent {
+   width: 500px;
+}
+
+.welcomeTitle {
+   text-align: start;
+   margin: 20px 0;
+}
+
+.welcomeTitle h5 {
+   font-size: 14px;
+   color: gray;
+   margin-bottom: 10px;
+}
+
+.welcomeTitle h1 {
+   font-size: 28px;
+   font-weight: 700;
+}
+
+.welcomedescription {
+   margin: 20px 0;
+}
+
+.welcomedescription p {
+   font-size: 16px;
+   color: gray;
+}
+
+.welcomeInfo {
+   display: flex;
+   gap: 10px;
+   align-items: flex-start;
+   margin-top: 30px;
+}
+
+.welcomeInfo div {
+   display: flex;
+   flex-direction: column;
+}
+
+.welcomeInfo>div>span {
+   color: var(--first-color);
+   font-size: 26px;
+   margin-bottom: 10px;
+}
+
+.welcomeInfo>div>p {
+   color: gray;
+   font-size: 15px;
+}

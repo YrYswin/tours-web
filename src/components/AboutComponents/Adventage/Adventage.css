@@ -1,0 +1,29 @@
+.adventage {
+   background-image: url('../../../assets/svg/backgroundSpecial.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: space-between;
+   padding: 70px 150px;
+}
+
+.adventage>div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   width: 270px;
+   padding: 30px;
+   background-color: rgb(230, 230, 230, .4);
+   border-radius: 15px;
+}
+
+.adventage>div .imageAdvantage,
+.imageAdvantage img {
+   height: 50px;
+}
+
+.adventage>div h3 {
+   text-align: center;
+   font-size: 18px;
+}

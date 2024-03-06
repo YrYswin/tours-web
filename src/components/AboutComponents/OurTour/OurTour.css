@@ -1,0 +1,42 @@
+.ourTour {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 550px;
+   margin-bottom: 100px;
+}
+
+.ourTourContainer {
+   width: 1000px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.ourTourContainer h1 {
+   font-size: 60px;
+   color: #eee;
+   font-weight: 300;
+}
+
+.ourTourContainer p {
+   width: 500px;
+   color: #eee;
+   line-height: 1.5;
+   margin: 25px 0;
+}
+
+.ourTourContainer button {
+   padding: 10px 30px;
+   background: transparent;
+   color: #fff;
+   border: 1px solid white;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.ourTourContainer button:hover {
+   background-color: rgb(230, 230, 230, .25);
+   text-shadow: 0px 0px 5px black;
+}

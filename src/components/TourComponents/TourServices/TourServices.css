@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yellowtail&display=swap');
+
+.tourServices {
+   width: 1250px;
+   margin: 50px auto;
+}
+
+.titleServices {
+   margin: 30px 0;
+}
+
+.titleServices h1 {
+   font-size: 60px;
+   font-family: Yellowtail;
+   font-weight: 600;
+   text-align: start;
+}
+
+.tourServicesContainer {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+}
+
+.itemTourService {
+   width: 390px;
+   border-radius: 22px;
+}
+
+.imageContainer img {
+   width: 100%;
+   border-radius: 22px;
+}
+
+.titleTourService {
+   padding: 10px 5px;
+}
+
+.titleTourService h1 {
+   padding: 5px 0;
+   font-size: 22px;
+   font-weight: 600;
+}
+
+.titleTourService p {
+   padding: 5px 0;
+   font-weight: 400;
+}
+
+.titleTourService button {
+   padding: 5px 0;
+   background: transparent;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: var(--first-color);
+   cursor: pointer;
+}
