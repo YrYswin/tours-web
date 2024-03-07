@@ -8,9 +8,7 @@ import TourItemGalleries from '../components/TourComponents/TourInfo/TourItemGal
 
 import backIcon from '../assets/svg/buttonBackIcon.svg'
 
-import data from '../data/toursData'
-
-const { tours } = data
+import tours from '../data/toursData'
 
 function TourInfo() {
    const { id } = useParams()

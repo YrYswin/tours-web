@@ -4,8 +4,7 @@ import TourPackage from './TourPackage'
 
 import './TourPackages.css'
 
-import data from '../../../data/toursData'
-const { tours } = data
+import tours from '../../../data/toursData'
 
 function TourPackages() {
    return (

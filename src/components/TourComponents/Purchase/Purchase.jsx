@@ -4,10 +4,9 @@ import { useParams, Link } from 'react-router-dom'
 import BookingDetail from './BookingDetails'
 import UserDetail from './UserDetail'
 import Payment from './Payment'
-import data from '../../../data/toursData'
+import tours from '../../../data/toursData'
 
 import './Purchase.css'
-const { tours } = data
 
 function Purchase() {
    const [step, setStep] = useState(1)
