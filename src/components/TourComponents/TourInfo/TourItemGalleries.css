@@ -1,0 +1,15 @@
+.tourItemGalleries {
+   width: 1250px;
+   margin: 40px auto;
+}
+
+.galleryContainer {
+   display: flex;
+   justify-content: space-between;
+   margin: 30px 0;
+}
+
+.galleryContainer img {
+   width: 300px;
+   border-radius: 10px;
+}

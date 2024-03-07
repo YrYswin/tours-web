@@ -1,0 +1,81 @@
+.bookingDetailParameters h2 {
+   font-size: 26px;
+}
+
+.bookingDetailParameters>input {
+   margin: 20px 5px;
+   padding: 5px 10px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   width: 300px;
+}
+
+.bookingDetailParameters h1 {
+   font-size: 30px;
+}
+
+.bookingDetailParameters .discount {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin: 25px 0;
+   background-color: rgb(233, 233, 233, .6);
+   padding: 10px;
+   border-radius: 10px;
+   width: 500px;
+}
+
+.ageDetails {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.ageDetails>div {
+   width: 500px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid #0e0e0e;
+   padding: 10px;
+   border-radius: 15px;
+}
+
+.ageTitle h3 {
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.ageTitle li {
+   margin: 5px 10px;
+   list-style: disc;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.ageTitle span {
+   color: var(--first-color);
+}
+
+.counter {
+   width: 100px;
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid gray;
+   border-radius: 10px;
+   height: 40px;
+}
+
+.counter>div {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 9px;
+}
+
+.counter>div:hover {
+   background-color: bisque;
+}

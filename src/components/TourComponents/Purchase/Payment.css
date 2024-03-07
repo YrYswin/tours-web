@@ -1,0 +1,52 @@
+.payment {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.payment>div {
+   border: 1px solid gray;
+   padding: 20px;
+   border-radius: 15px;
+   width: 500px;
+}
+
+.method {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 10px;
+}
+
+.method>div {
+   display: flex;
+   gap: 10px;
+}
+
+.cartDetail {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   margin: 25px 0 5px;
+}
+
+.cartInput {
+   position: relative;
+}
+
+.cartInput label {
+   position: absolute;
+   background-color: #fff;
+   z-index: 100;
+   top: 0px;
+   left: 8px;
+   padding: 5px;
+}
+
+.cartInput input {
+   padding: 10px 15px;
+   border: 1px solid gray;
+   border-radius: 10px;
+   font-size: 16px;
+   margin: 15px 0;
+}

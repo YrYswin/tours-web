@@ -1,0 +1,39 @@
+.tourItemDetail {
+   width: 1200px;
+   margin: 50px auto;
+}
+
+.tourItemDetailContent {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+
+.tourItemDetailContent h1 {
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.tourItemDetailContent p {
+   font-size: 16px;
+   color: gray;
+   line-height: 1.4;
+   width: 600px;
+}
+
+.tourItemDetailContent ul {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.tourItemDetailContent ul li {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.tourItemDetailContent ul strong {
+   font-weight: 700;
+   color: black;
+}

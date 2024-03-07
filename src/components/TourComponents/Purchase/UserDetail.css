@@ -1,0 +1,30 @@
+.userDetail {
+   margin: 10px 0;
+}
+
+.userDetail h1 {
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+
+.userDetail form {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 40px;
+}
+
+.inputContainerUser {
+   width: 230px;
+   display: flex;
+   flex-direction: column;
+}
+
+.inputContainerUser label {
+   font-size: 20px;
+}
+
+.inputContainerUser input {
+   border: 1px solid rgb(86, 86, 86);
+   margin: 10px 0;
+}

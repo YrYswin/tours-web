@@ -4,6 +4,9 @@ import TourPackage from './TourPackage'
 
 import './TourPackages.css'
 
+import data from '../../../data/toursData'
+const { tours } = data
+
 function TourPackages() {
    return (
       <div className='tourPackages'>
@@ -12,18 +15,11 @@ function TourPackages() {
          </div>
          <div className="tourPackagesContainer">
 
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
-            <TourPackage />
+            {
+               tours.map((item) => (
+                  <TourPackage key={item.id} data={item} />
+               ))
+            }
 
          </div>
       </div>

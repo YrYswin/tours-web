@@ -57,14 +57,17 @@
    color: var(--first-color);
 }
 
+.infoItem button a {
+   font-size: 16px;
+   color: var(--first-color);
+   font-weight: 600;
+}
+
 .infoItem button {
    background: transparent;
    margin: 20px 0px;
-   font-size: 16px;
    display: flex;
    align-items: center;
    gap: 10px;
-   color: var(--first-color);
-   font-weight: 600;
    cursor: pointer;
 }

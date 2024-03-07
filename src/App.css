@@ -64,3 +64,16 @@ body {
 .content {
    flex: 1;
 }
+
+.tourInfoPageContainer {
+   width: 1250px;
+   margin: 50px auto 30px;
+}
+
+.tourInfoPageContainer a {
+   color: gray;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 20px;
+}

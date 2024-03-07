@@ -19,11 +19,11 @@ function BookBike() {
                   />
                   <Input
                      label="Email Address" type='email'
-                     name='name' place="Enter your email address"
+                     name='email' place="Enter your email address"
                   />
                   <Input
                      label="Name and Surname" type='text'
-                     name='name' place="Enter your name and surname"
+                     name='surname' place="Enter your name and surname"
                   />
                   <Input
                      label="Name and Surname" type='text'
