@@ -1,19 +1,32 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 import exite from '../../assets/svg/exite.svg'
 
 import './CreateAccount.css'
+
+const API = "https://api.escuelajs.co/api/v1/users"
 
 export default function CreateAccount({ changePopup }) {
    const [user, setUser] = useState({
       name: '',
       email: '',
       password: '',
+      avatar: "https://i.imgur.com/5mPmJYO.jpeg",
    })
 
    const handleChange = (event) => {
       const { name, value } = event.target
       setUser({ ...user, [name]: value })
+   }
+
+   async function handleSubmit() {
+      try {
+         const res = await axios.post(API, user)
+         console.log(res)
+      } catch (error) {
+         console.log(error)
+      }
    }
    return (
       <div className='createAccount'>
@@ -22,22 +35,22 @@ export default function CreateAccount({ changePopup }) {
             <div className="close">
                <img onClick={() => changePopup('')} src={exite} alt="exite" />
             </div>
-            <form action="submit">
-               <label htmlFor="name">Name and Surname</label>
+            <div className='form'>
+               <h3>Name and Surname</h3>
                <input
                   type="text" placeholder='Enter your name and nurname'
                   name='name' value={user.name}
                   onChange={handleChange}
                />
 
-               <label htmlFor="email">Name and Surname</label>
+               <h3>Name and Surname</h3>
                <input
                   type="email" placeholder='Enter your email address'
                   name='email' value={user.email}
                   onChange={handleChange}
                />
 
-               <label htmlFor="password">Name and Surname</label>
+               <h3>Name and Surname</h3>
                <input
                   type="password" placeholder='Enter your password'
                   name='password' value={user.password}
@@ -49,9 +62,9 @@ export default function CreateAccount({ changePopup }) {
                   <p>I agree with Terms and Privacy</p>
                </div>
                <div className="submitBtn">
-                  <button type='submit'>Sign Up</button>
+                  <button onClick={() => handleSubmit()} type='submit'>Sign Up</button>
                </div>
-            </form>
+            </div>
             <p>or</p>
             <div className="submitWithGoogle">
                <button>Sign Up with Google</button>

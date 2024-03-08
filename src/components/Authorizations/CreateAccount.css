@@ -44,18 +44,18 @@
    width: 15px;
 }
 
-.createrMenu form {
+.createrMenu .form {
    display: flex;
    flex-direction: column;
    gap: 5px;
    color: #858585;
 }
 
-.createrMenu form label {
+.createrMenu .form h3 {
    margin: 20px 0 5px 0;
 }
 
-.createrMenu form>input {
+.createrMenu .form>input {
    width: 100%;
    padding: 10px 15px;
    border: 1px solid gray;

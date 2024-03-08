@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Input from './Input'
-
 import bikePicture from '../../../assets/image/bikePicture.png'
 
 import './BookBike.css'
@@ -12,33 +10,46 @@ function BookBike() {
          <div className="bookContainer">
             <h1>Book Now Bike</h1>
             <div className="bookContent">
-               <form>
-                  <Input
-                     label="Name and Surname" type='text'
-                     name='name' place="Enter your name and surname"
-                  />
-                  <Input
-                     label="Email Address" type='email'
-                     name='email' place="Enter your email address"
-                  />
-                  <Input
-                     label="Name and Surname" type='text'
-                     name='surname' place="Enter your name and surname"
-                  />
-                  <Input
-                     label="Name and Surname" type='text'
-                     name='name' place="Enter your name and surname"
-                  />
-                  <Input
-                     label="Name and Surname" type='text'
-                     name='name' place="Enter your name and surname"
-                  />
-                  <Input
-                     label="Name and Surname" type='text'
-                     name='name' place="Enter your name and surname"
-                  />
+               <div className='formBookBike'>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
+                  <div className='inputContainer'>
+                     <h3>Name and Surname</h3>
+                     <input
+                        type='text' name='name' placeholder='Enter your Name and Surname' autoComplete='name'
+                     />
+                  </div>
 
-               </form>
+
+               </div>
                <div className="btnContainer">
                   <button type='submit'>Book Now</button>
                </div>

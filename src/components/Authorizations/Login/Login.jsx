@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import { useDispatch, useSelector } from 'react-redux'
+
+import { setToken } from '../../../redux/user/userSlice'
 
 import exite from '../../../assets/svg/exite.svg'
 
 import './Login.css'
+
+const API = "https://api.escuelajs.co/api/v1/auth/login"
 
 function Login({ changePopup }) {
    const [user, setUser] = useState({
@@ -10,9 +16,24 @@ function Login({ changePopup }) {
       password: '',
    })
 
+   const dispatch = useDispatch()
+   const token = useSelector((state) => state.user.token)
+
    const handleChange = (event) => {
       const { name, value } = event.target
       setUser({ ...user, [name]: value })
+   }
+
+   async function handleLogin() {
+      try {
+         const { data } = await axios.post(API, user)
+
+         dispatch(setToken(data.access_token))
+
+         console.log(data)
+      } catch (error) {
+         console.log(error)
+      }
    }
 
    return (
@@ -22,15 +43,15 @@ function Login({ changePopup }) {
             <div className="close">
                <img onClick={() => changePopup('')} src={exite} alt="exite" />
             </div>
-            <form action="">
-               <label htmlFor="email">Name and Surname</label>
+            <div className='form'>
+               <h3>Name and Surname</h3>
                <input
                   type="email" placeholder='Enter your email address'
                   name='email' value={user.email}
                   onChange={handleChange}
                />
 
-               <label htmlFor="password">Name and Surname</label>
+               <h3>Name and Surname</h3>
                <input
                   type="password" placeholder='Enter your password'
                   name='password' value={user.password}
@@ -40,9 +61,9 @@ function Login({ changePopup }) {
                <div onClick={() => changePopup('recovery')} className="forgot">Forgot your password?</div>
 
                <div className="submitBtn">
-                  <button type='submit'>Sign Up</button>
+                  <button onClick={() => handleLogin()} type='submit'>Sign Up</button>
                </div>
-            </form>
+            </div>
             <p>or</p>
             <div className="submitWithGoogle">
                <button>Sign Up with Google</button>
